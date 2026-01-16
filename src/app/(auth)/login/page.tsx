@@ -5,9 +5,11 @@ const Page = async  () => {
 
     await requireUnAuth();
 
-    return ( <div>
+    return ( <div >
+
        <Loginform/>
-    </div>
+        </div>
+   
     );
 };
 
