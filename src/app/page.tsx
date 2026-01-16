@@ -1,12 +1,15 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { requireAuth } from "@/lib/auth-utils";
 
-export default function Home() {
+const Page = async () => {
+  
+
+await requireAuth();
+
   return (
-    <div>
-      <Button variant="outline">
-        CLick me bass
-        </Button> 
+    <div className="">
+        protected server components
     </div>
   );
-}
+};
+
+export default Page;
